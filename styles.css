@@ -1,0 +1,163 @@
+/* Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background: linear-gradient(135deg, #e3f2fd, #f9fbe7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+/* App Container */
+.app-container {
+  background: #ffffff;
+  border-radius: 20px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px;
+  padding: 20px;
+}
+
+/* Header Section */
+.header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.header h1 {
+  font-size: 1.8rem;
+  color: #333;
+}
+
+.header p {
+  font-size: 0.9rem;
+  color: #666;
+}
+
+/* Form Section */
+.form-section {
+  margin-bottom: 20px;
+}
+
+.todo-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.todo-form input,
+.todo-form select,
+.todo-form button {
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  font-size: 0.9rem;
+  
+}
+select {
+  border: 1px solid #ddd;
+  padding: 10px 1px;
+  border-radius: 10px;
+}
+
+.todo-form input:focus,
+.todo-form select:focus {
+  outline: none;
+  border-color: #42a5f5;
+  box-shadow: 0 0 5px rgba(66, 165, 245, 0.5);
+}
+
+.todo-form button {
+  background: linear-gradient(135deg, #42a5f5, #1e88e5);
+  color: #ffffff;
+  border: none;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.todo-form button:hover {
+  background: linear-gradient(135deg, #1e88e5, #1565c0);
+}
+
+/* Task List Section */
+.task-list-section {
+  margin-top: 20px;
+}
+
+.task-list-section h2 {
+  font-size: 1.4rem;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.task-list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.task-item {
+  background: #f9f9f9;
+  border-radius: 10px;
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.task-info h3 {
+  font-size: 1rem;
+  color: #333;
+  margin-bottom: 5px;
+  width: 180px;
+}
+
+.task-info p {
+  font-size: 0.8rem;
+  color: #666;
+}
+
+.status {
+  font-size: 0.8rem;
+  padding: 5px 10px;
+  border-radius: 5px;
+  text-transform: capitalize;
+}
+
+.status.not-started {
+  background: #ffcc80;
+  color: #ff6f00;
+}
+
+.status.in-progress {
+  background: #81d4fa;
+  color: #0277bd;
+}
+
+.status.completed {
+  background: #c8e6c9;
+  color: #388e3c;
+}
+
+/* Delete Button */
+.delete-btn {
+  padding: 10px;
+  background: #ef5350;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.delete-btn:hover {
+  background: #d32f2f;
+}
